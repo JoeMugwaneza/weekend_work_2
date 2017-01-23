@@ -9,7 +9,25 @@
 # constructor accordingly.
 
 class Yodel
+ attr_reader :segment, :count, :attributes
 
+ def initialize(multiply)
+   @segment = multiply[:segment]
+   @count = multiply[:count]
+
+ end
+
+ def segment
+   return @segment
+ end
+
+ def count
+   return @count
+ end
+
+ def articulate
+   return @segment * @count
+ end  
 end
 
 
